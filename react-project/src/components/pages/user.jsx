@@ -9,11 +9,11 @@ import {
 } from "@material-ui/core";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import * as React from 'react';
+
 const User = () => {
     const { register, handleSubmit } = useForm();
     const [result, setResult] = useState("");
-    const [age, setAge] = React.useState('');
+    const [age, setAge] = useState('');
 
     const handleChange = (event) => {
         setAge(event.target.value);
@@ -26,8 +26,8 @@ const User = () => {
                 <Typography variant="h2">User</Typography>
 
                 <form onSubmit={handleSubmit((data) => setResult(JSON.stringify(data)))}>
-                    <Grid container spacing={2}>
-                        <Grid item xs={8}>
+                    <Grid container>
+                        <Grid item xs={4}>
                             <TextField id="standard-basic" label="First Name" {...register("firstName")} variant="standard" />
                         </Grid>
                         <Grid item xs={4}>
@@ -49,15 +49,8 @@ const User = () => {
                                 <MenuItem value={30}>Thirty</MenuItem>
                             </Select>
                         </Grid>
-                        <Grid item xs={8}>
-
-                        </Grid>
                     </Grid>
-
-
-
-
-
+                    
                     <p>{result}</p>
                     <Button variant="contained" style={{ color: "white", background: "green" }} type="submit">Submit</Button>
                 </form>

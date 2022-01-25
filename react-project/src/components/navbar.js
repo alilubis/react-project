@@ -18,10 +18,12 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 // IMPORTING ICONS
-import MenuIcon from "@material-ui/icons/Menu";
-import HomeIcon from "@material-ui/icons/Home";
-import InfoIcon from '@material-ui/icons/Info';
-import PersonIcon from "@material-ui/icons/Person";
+import { MenuIcon, HomeIcon, InfoIcon, PersonIcon } from "@mui/icons-material";
+
+// import MenuIcon from "@material-ui/icons/Menu";
+// import HomeIcon from "@material-ui/icons/Home";
+// import InfoIcon from '@material-ui/icons/Info';
+// import PersonIcon from "@material-ui/icons/Person";
 
 // REACT PAGES IMPORTS
 import Home from "./pages/home";
