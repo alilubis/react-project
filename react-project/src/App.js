@@ -1,4 +1,4 @@
-import NavBar from "./components/navbar";
+import NavBar from "./components/Navbar";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { Paper, Container } from "@material-ui/core";
 
