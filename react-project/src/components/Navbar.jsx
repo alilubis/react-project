@@ -18,7 +18,6 @@ import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 // IMPORTING ICONS
-//import { MenuIcon, HomeIcon, InfoIcon, PersonIcon } from "@mui/icons-material";
 
 import MenuIcon from "@material-ui/icons/Menu";
 import HomeIcon from "@material-ui/icons/Home";
@@ -27,7 +26,7 @@ import PersonIcon from "@material-ui/icons/Person";
 
 // REACT PAGES IMPORTS
 import Home from "../pages/Home";
-import User from "../pages/User";
+import User from "../pages/users/Index";
 import About from "../pages/About";
 
 // LOCAL-STYLING
@@ -115,7 +114,7 @@ const Header = (props) => {
                                         <MenuItem
                                             onClick={() => setAnchor(null)}
                                             component={Link}
-                                            to="/College"
+                                            to="/User"
                                         >
                                             <ListItemIcon>
                                                 <PersonIcon />
